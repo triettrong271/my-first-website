@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Student Registration Form
+    </title>
+</head>
+<body>
+    <h1>
+        Student Registration Form
+    </h1>
+    <form>
+<label for="name">
+    Full Name:
+</label>
+<br>
+<input
+    type="text"
+    id="name"
+    name="fullName"
+    placeholder="Enter your full name"
+    minlength="3"
+    maxlength="50"
+    required
+>
+<br>
+
+<label for="studentCode">
+    Student Code:
+</label>
+<br>
+<input
+    type="text"
+    id="studentCode"
+    name="studentCode"
+    pattern="[A-Za-z0-9]+" 
+    required
+>
+<br>
+
+<label for="email">
+    Email:
+</label>
+<br>
+<input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="example@gmail.com"
+    required
+>
+<br>
+
+<label for="phone">
+    Phone Number:
+</label>
+<br>
+<input
+    type="tel"
+    id="phone"
+    name="phone"
+    placeholder="0123456789"
+    pattern="0[0-9]{9}"
+    required
+>
+<br>
+
+<label for="dob">
+    Date of Birth:
+</label>
+<br>
+<input
+    type="date"
+    id="dob"
+    name="dob"
+>
+<br>
+
+<label for="age">
+    Age:
+</label>
+<br>
+<input
+    type="number"
+    id="age"
+    name="age"
+    min="18"
+    max="30"
+>
+<br>
+
+<p>
+    Gender:
+</p>
+<input
+    type="radio"
+    id="male"
+    name="gender"
+    value="male"
+>
+<label for="male">
+    Male
+</label>
+<br>
+<input
+    type="radio"
+    id="female"
+    name="gender"
+    value="female"
+>
+<label for="female">
+    Female
+</label>
+<br>
+<input
+    type="radio"
+    id="other"
+    name="gender"
+    value="other"
+>
+<label for="other">
+    Other
+</label>
+<br>
+
+<label for="major">
+    Major:
+</label>
+<br>
+<select
+    id="major"
+    name="major"
+    required
+>
+    <option value="">
+        -- Select a major --
+    </option>
+    <option value="it">
+        Information Technology
+    </option>
+    <option value="ai">
+        Artificial Intelligence
+    </option>
+    <option value="business">
+        Business Administration
+    </option>
+</select>
+<br>
+
+<label for="year">
+    Year:
+</label>
+<br>
+<select
+    id="year"
+    name="year"
+>
+    <option value="">
+        -- Select year --
+    </option>
+    <option value="1">
+        Year 1
+    </option>
+    <option value="2">
+        Year 2
+    </option>
+    <option value="3">
+        Year 3
+    </option>
+    <option value="4">
+        Year 4
+    </option>
+</select>
+<br>
+
+<p>
+    Hobbies:
+</p>
+<input
+    type="checkbox"
+    id="sports"
+    name="hobby"
+    value="sports"
+>
+<label for="sports">
+    Sports
+</label>
+<br>
+<input
+    type="checkbox"
+    id="music"
+    name="hobby"
+    value="music"
+>
+<label for="music">
+    Music
+</label>
+<br>
+<input
+    type="checkbox"
+    id="reading"
+    name="hobby"
+    value="reading"
+>
+<label for="reading">
+    Reading
+</label>
+<br>
+
+<p>
+    Programming Languages:
+</p>
+<input
+    type="checkbox"
+    id="python"
+    name="language"
+    value="python"
+>
+<label for="python">
+    Python
+</label>
+<br>
+<input
+    type="checkbox"
+    id="java"
+    name="language"
+    value="java"
+>
+<label for="java">
+    Java
+</label>
+<br>
+<input
+    type="checkbox"
+    id="htmlLang"
+    name="language"
+    value="html"
+>
+<label for="htmlLang">
+    HTML/CSS
+</label>
+<br>
+
+<label for="photo">
+    Profile Picture:
+</label>
+<br>
+<input
+    type="file"
+    id="photo"
+    name="photo"
+    accept="image/*"
+>
+<br>
+
+<label for="studentId">
+    Student ID:
+</label>
+<br>
+<input
+    type="text"
+    id="studentId"
+    name="studentId"
+    value="SV001"
+    readonly
+>
+<br>
+
+<label for="country">
+    Country:
+</label>
+<br>
+<input
+    type="text"
+    id="country"
+    name="country"
+    value="Vietnam"
+    disabled
+>
+<br>
+
+<label for="address">
+    Address:
+</label>
+<br>
+<textarea
+    id="address"
+    name="address"
+    rows="3"
+    cols="40"
+    placeholder="Enter your address"
+>
+</textarea>
+<br>
+
+<label for="introduction">
+    Introduction:
+</label>
+<br>
+<textarea
+    id="introduction"
+    name="introduction"
+    rows="4"
+    cols="40"
+    maxlength="200"
+    placeholder="Enter introduction"
+>
+</textarea>
+<br>
+
+<label for="password">
+    Password:
+</label>
+<br>
+<input
+    type="password"
+    id="password"
+    name="password"
+    required
+>
+<br>
+<br>
+
+<button type="submit">
+    Submit Form
+</button>
+<button type="reset">
+    Reset Form
+</button>
+    </form>
+</body>
+</html>
